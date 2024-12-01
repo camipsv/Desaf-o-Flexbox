@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor de ambas secciones*/
+.content {
+    display: flex;
+    height: 100vh;
+    align-items: stretch; /* Asegura que los hijos tengan la misma altura */
+}
+
+/* Contenedor de sección de chats */
+.contactos {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    width: 25vw; /* Ajusta el ancho al diseño*/
+    flex-grow: 1;
+}
+
+/* Perfil usuario */
+.perfiluser {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #ccc;
+    border-bottom: 0;
+    border-right: 2px solid #ccc;
+    height: 5.2rem;
+    flex-shrink: 0;
+}
+
+.fotoperfiluser img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.textoperfiluser {
+    margin-left: 20px;
+}
+
+
+.textoperfiluser h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    font-family: "Roboto", serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #444749;
+}
+
+.textoperfiluser p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    font-family: "Roboto", serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #BEC1BB;
+}
+
+/* Iconos */
+.iconos {
+    margin-left: 70px;
+}
+
+.iconos i {
+    color: #979897;
+    font-size: 24px;
+    margin-left: 15px;
+}
+
+/* Botón */
+
+.boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    height: 140px;
+    flex-shrink: 0;
+}
+
+.btn {
+    background-color: #A491D2;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-family: "Roboto", serif;
+}
+
+.btn:hover {
+    background-color: #CDC3E6;
+}
+
+.btn:focus-visible {
+    background-color: #BEC1BB;
+}
+
+/* Contenedor contactos */
+.chat {
+    align-items: start;
+    width: 100%;
+    height: 54rem;
+    transition: background-color 0.2s ease;
+}
+
+/* Contiene cada contacto uno por uno */
+.perfil {
+    display: flex;
+    justify-content: start;
+    height: 5rem;
+    flex-shrink: 0;
+    border: 1px solid #ccc;
+    align-items: center
+}
+
+.perfil:hover {
+    background-color: #f1f1f1;
+}
+
+/* Imagen del contacto */
+.fotoperfil img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 40px;
+    margin-left: 30px;
+}
+
+/* Texto del contacto */
+.textoperfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textoperfil h3 {
+    font-size: 20px;
+    margin: 0;
+    font-family: "Roboto", serif;
+    font-weight: normal;
+    color: #444749;
+}
+
+.textoperfil p {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: "Roboto", serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: #828485;
+}
+
+/* Contenedor sección principal */
+.principal {
+    width: 75vw;
+    height: 54rem;
+    flex-shrink: 0;
+    background-color: #f6f8f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.principal img {
+    width: 18.75rem;
+    height: 18.75rem;
+    border-radius: 25px;
+}
+
+.principal h2 {
+    font-size: 54px;
+    font-family: "Roboto", serif;
+    color:#1B1F21;
+    font-weight: normal;
+    margin-top: 30px;
+}
+
+.principal p {
+    font-size: 20px;
+    font-family: "Roboto", serif;
+}
+
+
